@@ -303,6 +303,7 @@ body {
 .screen-final p {
   color: #353535;
   font-size: 1.2rem;
+  font-weight: 600;
   margin-bottom: 20px;
   position: relative;
   animation: typewriter 3.5s steps(45, end) forwards 1.2s;
@@ -510,4 +511,5 @@ body {
 .romantic-text.show {
   opacity: 1;
 }
+
 
