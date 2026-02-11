@@ -180,7 +180,6 @@ body {
   border-radius: 15px;
   object-fit: cover;
   opacity: 0;
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
   animation: fadeInPhoto 1.5s ease-in-out forwards;
 }
 
@@ -299,11 +298,11 @@ body {
 .screen-final h2 {
   color: #a3526d;
   margin-bottom: 20px;
-  font-size: 15px;
+  font-size: 20px;
 }
 .screen-final p {
   color: #353535;
-  font-size: 1rem;
+  font-size: 1.2rem;
   margin-bottom: 20px;
   position: relative;
   animation: typewriter 3.5s steps(45, end) forwards 1.2s;
@@ -511,3 +510,4 @@ body {
 .romantic-text.show {
   opacity: 1;
 }
+
