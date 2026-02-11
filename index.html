@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>For You ❤️</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Background Music -->
+    <audio id="bgMusic" loop>
+      <source
+        src="assets/music/_Newyork_Nagaram_Piano_Bgm_Sillunu_Oru_Kaadhal_Tamil_Ringtone_(by Fringster.com).mp3"
+        type="audio/mpeg"
+      />
+    </audio>
+
+    <!-- Main Container -->
+    <div class="container">
+      <!-- Screen 1 -->
+      <section class="screen screen-intro active" id="screen1">
+        <img src="assets/images/couple1.png" alt="Couple" class="couple-img" />
+
+        <h1>Bawaa💙</h1>
+        <p>Will you be my Valentine? ❤️</p>
+        <button onclick="nextScreen(2)">Click here to see more...</button>
+      </section>
+
+      <!-- Screen 2 -->
+      <section class="screen screen-thread" id="screen2">
+        <img src="" alt="Sentence image" class="sentence-image" />
+        <div class="sentence-container">
+          <p class="sentence"></p>
+        </div>
+      </section>
+
+      <!-- Screen 3 -->
+      <section class="screen screen-proposal" id="screen3">
+        <div class="dots-connection-container">
+          <div class="dot dot-left"></div>
+          <svg
+            class="dots-line-svg"
+            width="100%"
+            height="40"
+            viewBox="0 0 220 40"
+          >
+            <line x1="30" y1="20" x2="190" y2="20" class="dots-line" />
+          </svg>
+          <div class="dot dot-right"></div>
+          <div class="heart-center"></div>
+        </div>
+        <div class="romantic-text"></div>
+        <button
+          onclick="nextScreen(4)"
+          class="proposal-button"
+          style="display: none"
+        >
+          Content mudiyala inu iruku Click panu...
+        </button>
+      </section>
+
+      <!-- Screen 4-->
+      <section class="screen screen-photos" id="screen4">
+        <div class="photos-container">
+          <!-- Photos will be dynamically inserted here -->
+        </div>
+        <p class="photo-caption"></p>
+        <button
+          onclick="nextScreen(5)"
+          class="photo-button"
+          style="display: none"
+        >
+          Important Question-a inime tha...
+        </button>
+      </section>
+
+      <!-- Screen 5 -->
+      <section class="screen screen-choice" id="screen5">
+        <h2>
+          NO sola try panatha <br />
+          Because you've only one option "YES" <br />
+          Unaku vera vazhiye ila 😅
+        </h2>
+        <div class="buttons">
+          <button class="yes" onclick="yesClicked()">YES ❤️</button>
+          <button class="no" id="noBtn">NO 😅</button>
+        </div>
+      </section>
+
+      <!-- Final Screen -->
+      <section class="screen screen-final" id="final">
+        <img src="assets/images/couple.jpg" alt="Couple" class="couple-img" />
+        <h1>Thank you for choosing me 😘</h1>
+        <h2>
+          <b>
+            Suba & Kutty Prasanth waiting for You <br />
+            Seekrama vanthru...</b
+          >
+        </h2>
+        <p>Happy Valentine’s Day Prasantheyyyy!!!💙</p>
+      </section>
+    </div>
+
+    <!-- Floating Hearts -->
+    <div class="hearts-container"></div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
